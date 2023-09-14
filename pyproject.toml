@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flows_cli_builder"
-version = "0.0.1"
+version = "0.0.2"
 description = "Cli prompting tool for nested pydantic models"
 authors = ["Lukas Burkhard <dev@lksch.ch>"]
 repository = "https://github.com/DadaDaMotha/flows-cli-builder"
