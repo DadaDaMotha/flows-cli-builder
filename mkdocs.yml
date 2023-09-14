@@ -1,0 +1,55 @@
+site_name: flows-cli-builder
+repo_url: https://github.com/DadaDaMotha/flows-cli-builder
+site_url: https://DadaDaMotha.github.io/flows-cli-builder
+site_description: Cli prompting tool for nested pydantic models
+site_author: Lukas Burkhard
+edit_uri: edit/main/docs/
+repo_name: DadaDaMotha/flows-cli-builder
+copyright: Maintained by <a href="https://DadaDaMotha.com">Florian</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+  - Examples: examples.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+            setup_commands:
+                - import sys
+                - sys.path.append('../')
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DadaDaMotha/flows-cli-builder
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/flows-cli-builder
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
